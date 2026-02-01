@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasa Fiskalna Team</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      padding: 40px 20px;
+      text-align: center;
+      color: #022c22;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    nav {
+      background: #020617;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+    }
+    nav a {
+      color: #22c55e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #22c55e;
+      margin-bottom: 20px;
+    }
+    .players {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .player {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .player span {
+      display: block;
+      margin-top: 10px;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KASA FISKALNA TEAM</h1>
+    <p>Oficjalna strona drużyny piłkarskiej ⚽</p>
+  </header>
+
+  <nav>
+    <a href="#about">O drużynie</a>
+    <a href="#players">Zawodnicy</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <section id="about">
+    <h2>O drużynie</h2>
+    <p>
+      Kasa Fiskalna Team to drużyna, która gra twardo jak stal i liczy gole
+      dokładniej niż paragon w Lidlu. Gramy dla zabawy, rywalizacji i czystej
+      piłkarskiej zajawki.
+    </p>
+  </section>
+
+  <section id="players">
+    <h2>Skład drużyny</h2>
+    <div class="players">
+      <div class="player">
+        <strong>Jan Kowalski</strong>
+        <span>Bramkarz</span>
+      </div>
+      <div class="player">
+        <strong>Adam Nowak</strong>
+        <span>Obrońca</span>
+      </div>
+      <div class="player">
+        <strong>Piotr Zieliński</strong>
+        <span>Pomocnik</span>
+      </div>
+      <div class="player">
+        <strong>Michał Lewandowski</strong>
+        <span>Napastnik</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>
+      Email: <strong>kasafiskalnateam@email.pl</strong><br />
+      Instagram: <strong>@kasafiskalnateam</strong>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Kasa Fiskalna Team. Wszelkie prawa zarejestrowane 🧾⚽</p>
+  </footer>
+
+</body>
+</html>
