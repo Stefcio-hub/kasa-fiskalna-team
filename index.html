@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kasa Fiskalna Team</title>
   <style>
+    /* Podstawowy styl całej strony */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -12,38 +13,114 @@
       color: #ffffff;
     }
 
+    a {
+      color: #22c55e;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header z obrazkiem drużyny */
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #020617;
+    }
+
     header img {
       width: 100%;
       max-width: 800px;
       height: auto;
-      display: block;
-      margin: 0 auto;
       object-fit: cover;
       border-radius: 10px;
+      display: block;
+      margin: 0 auto 10px auto;
     }
 
     header p {
-      text-align: center;
-      margin-top: 10px;
-      font-size: 1.2rem;
+      margin: 0;
       color: #94a3b8;
+      font-size: 1.2rem;
+    }
+
+    /* Nawigacja */
+    nav {
+      text-align: center;
+      background-color: #020617;
+      padding: 10px 0;
+    }
+
+    /* Sekcje */
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #22c55e;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Zawodnicy */
+    .players {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .player {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .player img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .player span {
+      display: block;
+      margin-top: 10px;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="zdjecia/bb7aff88-cf7b-47a7-9cdf-43cc656bfeeb.jpg" alt="Kasa Fiskalna Team" />
-  <p>Oficjalna strona drużyny piłkarskiej ⚽</p>
-</header>
+  <!-- HEADER ZE ZDJĘCIEM DRUŻYNY -->
+  <header>
+    <img src="zdjecia/bb7aff88-cf7b-47a7-9cdf-43cc656bfeeb.jpg" alt="Kasa Fiskalna Team" />
+    <p>Oficjalna strona drużyny piłkarskiej ⚽</p>
+  </header>
 
-
+  <!-- NAWIGACJA -->
   <nav>
     <a href="#about">O drużynie</a>
     <a href="#players">Zawodnicy</a>
     <a href="#contact">Kontakt</a>
   </nav>
 
+  <!-- O DRUŻYNIE -->
   <section id="about">
     <h2>O drużynie</h2>
     <p>
@@ -53,27 +130,34 @@
     </p>
   </section>
 
+  <!-- ZAWODNICY -->
   <section id="players">
     <h2>Skład drużyny</h2>
-    <div class="player">Klubson<br><span>Kapitan</span>
-    </div>
     <div class="players">
-      <div class="player">Martin
+      <div class="player">
+        <img src="zdjecia/jan.jpg" alt="Jan Kowalski" />
+        <strong>Jan Kowalski</strong>
         <span>Bramkarz</span>
       </div>
-      <div class="player">Dinho
-        <span>Klapek 1</span>
+      <div class="player">
+        <img src="zdjecia/adam.jpg" alt="Adam Nowak" />
+        <strong>Adam Nowak</strong>
+        <span>Obrońca</span>
       </div>
       <div class="player">
-        <strong>Bart</strong>
-        <span>Klapek 2</span>
+        <img src="zdjecia/piotr.jpg" alt="Piotr Zieliński" />
+        <strong>Piotr Zieliński</strong>
+        <span>Pomocnik</span>
       </div>
-      <div class="player">ŁTCwaniak
-        <span>Klapek 2</span>
+      <div class="player">
+        <img src="zdjecia/michal.jpg" alt="Michał Lewandowski" />
+        <strong>Michał Lewandowski</strong>
+        <span>Napastnik</span>
       </div>
     </div>
   </section>
 
+  <!-- KONTAKT -->
   <section id="contact">
     <h2>Kontakt</h2>
     <p>
@@ -82,6 +166,7 @@
     </p>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2026 Kasa Fiskalna Team. Wszelkie prawa zarejestrowane 🧾⚽</p>
   </footer>
